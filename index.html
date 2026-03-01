@@ -1,619 +1,211 @@
 <!DOCTYPE html>
-<!-- saved from url=(0057)https://startbootstrap.github.io/startbootstrap-creative/ -->
-<html lang="en" class="">
+<html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Creative - Start Bootstrap Theme</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon"
-        href="https://startbootstrap.github.io/startbootstrap-creative/assets/favicon.ico">
-    <!-- Bootstrap Icons-->
-    <link href="assets/
-bootstrap-icons.css" rel="stylesheet">
-    <!-- Google fonts-->
-    <link href="assets/
-css" rel="stylesheet">
-    <link href="assets/
-css(1)" rel="stylesheet" type="text/css">
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="assets/
-simpleLightbox.min.css" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="assets/
-styles.css" rel="stylesheet">
+    <title>Luxury Living Interiors</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Luxury Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <style>
-        .d-none {
-            display: none;
+        /* ===== GLOBAL ===== */
+        body {
+            font-family: "Inter", sans-serif;
+            color: #3d3a37;
         }
 
-        .invalid-feedback {
-            display: none;
+        h1,
+        h2,
+        h3 {
+            font-family: "Playfair Display", serif;
         }
 
-        .btn.disabled {
-            pointer-events: none;
-            opacity: 0.65;
+        /* ===== NAVBAR ===== */
+        #mainNav {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
         }
 
+        .navbar-brand {
+            font-family: "Playfair Display", serif;
+            font-size: 22px;
+            color: white !important;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        /* ===== HERO ===== */
         .masthead {
             height: 100vh;
-            /* full screen height */
-        }
-
-        .masthead .container {
-            height: 100%;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+            background-size: cover;
+            background-position: center;
         }
 
         .masthead h1 {
             font-size: 70px;
-            font-weight: 600;
+            color: white;
         }
-    </style>
-    <style>
-        #inspect-element-top-layer * {
-            all: unset;
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: #c46a3a;
+            margin: 20px auto;
+            border: none;
+        }
+
+        /* ===== ABOUT ===== */
+        .bg-primary {
+            background-color: #8a7f76 !important;
+        }
+
+        /* ===== SERVICES ===== */
+        .page-section {
+            padding: 90px 0;
+        }
+
+        .service-icon {
+            font-size: 40px;
+            color: #c46a3a;
+            margin-bottom: 15px;
+        }
+
+        /* ===== BUTTON ===== */
+        .btn-xl {
+            background: #c46a3a;
+            border: none;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 30px;
+        }
+
+        .btn-xl:hover {
+            background: #a9562c;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #f5f2ef;
         }
     </style>
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">Luxury Living Interiors</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation" fdprocessedid="49nvr"><span class="navbar-toggler-icon"></span></button>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">Luxury Living Interiors</a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container h-100 d-flex justify-content-center align-items-center">
-            <div class="text-center">
-                <h1 class="text-white font-weight-bold">
-                    Luxury Living Interiors
-                </h1>
-                <hr class="divider" />
-            </div>
+
+    <!-- HERO -->
+    <header class="masthead d-flex align-items-center">
+        <div class="container text-center">
+            <h1>Luxury Living Interiors</h1>
+            <hr class="divider">
+            <p class="text-white fs-5">Transforming spaces into timeless luxury experiences.</p>
         </div>
     </header>
 
-
-    <!-- About-->
-    <section class="page-section bg-primary" id="about">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">We've got what you need!</h2>
-                    <hr class="divider divider-light">
-                    <p class="text-white-75 mb-4">From concept to completion, we create stylish and functional interiors
-                        tailored to your vision. Let us transform your space into something truly beautiful.</p>
-                    <a class="btn btn-light btn-xl" href="#contact">Get Started!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services-->
-    <section class="page-section" id="services">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">At Your Service</h2>
+    <!-- ABOUT -->
+    <section class="page-section bg-primary text-white text-center" id="about">
+        <div class="container">
+            <h2>We've Got What You Need</h2>
             <hr class="divider">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5" />
-                            </svg></div>
-                        <h3 class="h4 mb-2">Space Planning</h3>
-                        <p class="text-muted mb-0">We design smart layouts that make your space functional, comfortable,
-                            and visually appealing.</p>
-                    </div>
+            <p>
+                From concept to completion, we create stylish and functional interiors tailored to your vision.
+                Let us transform your space into something truly beautiful.
+            </p>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="page-section text-center" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <hr class="divider">
+
+            <div class="row mt-5">
+
+                <div class="col-md-3">
+                    <div class="service-icon">🏠</div>
+                    <h4>Space Planning</h4>
+                    <p class="text-muted">Smart layouts that enhance comfort and aesthetics.</p>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-terminal-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1m-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5z" />
-                            </svg></div>
-                        <h3 class="h4 mb-2"><strong data-start="363" data-end="382">Interior Design</strong></h3>
-                        <p class="text-muted mb-0">Creative and personalized interior solutions tailored to your style
-                            and lifestyle.</p>
-                    </div>
+
+                <div class="col-md-3">
+                    <div class="service-icon">🎨</div>
+                    <h4>Interior Design</h4>
+                    <p class="text-muted">Creative personalized interior solutions.</p>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-file-easel" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.5 5a.5.5 0 1 0-1 0h-2A1.5 1.5 0 0 0 4 6.5v2A1.5 1.5 0 0 0 5.5 10h.473l-.447 1.342a.5.5 0 1 0 .948.316L7.027 10H7.5v1a.5.5 0 0 0 1 0v-1h.473l.553 1.658a.5.5 0 1 0 .948-.316L10.027 10h.473A1.5 1.5 0 0 0 12 8.5v-2A1.5 1.5 0 0 0 10.5 5zM5 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z" />
-                                <path
-                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1" />
-                            </svg></div>
-                        <h3 class="h4 mb-2"><strong data-start="474" data-end="505">Furniture &amp; Decor
-                                Selection</strong></h3>
-                        <p class="text-muted mb-0">Carefully chosen furniture, colors, and décor elements to create a
-                            perfect look.</p>
-                    </div>
+
+                <div class="col-md-3">
+                    <div class="service-icon">🛋️</div>
+                    <h4>Furniture & Decor</h4>
+                    <p class="text-muted">Carefully curated furniture and décor.</p>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-filetype-exe" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM2.575 15.202H.785v-1.073H2.47v-.606H.785v-1.025h1.79v-.648H0v3.999h2.575zM6.31 11.85h-.893l-.823 1.439h-.036l-.832-1.439h-.931l1.227 1.983-1.239 2.016h.861l.853-1.415h.035l.85 1.415h.908l-1.254-1.992zm1.025 3.352h1.79v.647H6.548V11.85h2.576v.648h-1.79v1.025h1.684v.606H7.334v1.073Z" />
-                            </svg></div>
-                        <h3 class="h4 mb-2"><strong data-start="594" data-end="615">Project Execution</strong></h3>
-                        <p class="text-muted mb-0">From concept to completion, we manage every detail to bring your
-                            dream space to life.</p>
-                    </div>
+
+                <div class="col-md-3">
+                    <div class="service-icon">📐</div>
+                    <h4>Project Execution</h4>
+                    <p class="text-muted">Complete management from concept to completion.</p>
                 </div>
+
             </div>
         </div>
     </section>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Let's Get In Touch!</h2>
-                    <hr class="divider">
-                    <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will
-                        get back to you as soon as possible!</p>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                <div class="col-lg-6">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
 
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <div style="display:flex; justify-content:center;">
-                        <form method="POST" style="width:100%; max-width:640px;">
+    <!-- CONTACT -->
+    <section class="page-section text-center" id="contact">
+        <div class="container">
+            <h2>Let's Get In Touch</h2>
+            <hr class="divider">
 
-                            <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSfqdTr4VfBDSH6_jUH3VAw7_Qd01Qku--wMHkgYKHG9zdttPg/viewform?embedded=true"
-                                width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">
-                                Loading…
-                            </iframe>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfqdTr4VfBDSH6_jUH3VAw7_Qd01Qku--wMHkgYKHG9zdttPg/viewform?embedded=true"
+                width="100%" height="900" style="border:none;">
+            </iframe>
 
-                        </form>
-                    </div>
-
-                </div>
-            </div>
         </div>
     </section>
-    <!-- Footer-->
-    <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright © 2026-Talat&nbsp;</div>
+
+    <!-- FOOTER -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <small class="text-muted">Copyright © 2026 Talat</small>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="assets/
-bootstrap.bundle.min.js.download"></script>
-    <!-- SimpleLightbox plugin JS-->
-    <script src="assets/
-simpleLightbox.min.js.download"></script>
-    <!-- Core theme JS-->
-    <script src="assets/
-scripts.js.download"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="assets/
-sb-forms-latest.js.download"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div id="inspect-element-top-layer" popover="auto" data-inspect-element="inspectElement"
-        style="pointer-events: none; border: unset; padding: 0px;">
-        <div data-inspect-element="inspectElement" id="inspect-element-content"
-            style="position: fixed; z-index: 2147483647; pointer-events: none; background-color: rgba(136, 178, 190, 0.5); border-style: solid; border-width: 0px; border-color: transparent; box-sizing: content-box; top: 21px; left: 133.455px; height: 30px; width: 152.761px;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-padding"
-            style="position: fixed; z-index: 2147483647; pointer-events: none; background-color: transparent; border-style: solid; border-width: 5px 0px; border-color: rgba(184, 195, 127, 0.5); box-sizing: content-box; top: 16px; left: 133.455px; height: 30px; width: 152.761px;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-border"
-            style="position: fixed; z-index: 2147483647; pointer-events: none; background-color: transparent; border-style: solid; border-width: 0px; border-color: rgba(227, 194, 130, 0.5); box-sizing: content-box; top: 16px; left: 133.455px; height: 40px; width: 152.761px;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-margin"
-            style="position: fixed; z-index: 2147483647; pointer-events: none; background-color: transparent; border-style: solid; border-width: 0px 16px 0px 0px; border-color: rgba(172, 128, 83, 0.5); box-sizing: content-box; top: 16px; left: 133.455px; height: 40px; width: 152.761px;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-content-top"
-            style="position: fixed; border-width: 1px 0px 0px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 20px; left: 0px; border-color: rgb(136, 178, 190); width: 100vw;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-content-right"
-            style="position: fixed; border-width: 0px 1px 0px 0px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 0px; left: 286.216px; border-color: rgb(136, 178, 190); height: 100vh;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-content-bottom"
-            style="position: fixed; border-width: 0px 0px 1px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 51px; left: 0px; border-color: rgb(136, 178, 190); width: 100vw;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-content-left"
-            style="position: fixed; border-width: 0px 0px 0px 1px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 0px; left: 132.455px; border-color: rgb(136, 178, 190); height: 100vh;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-padding-top"
-            style="position: fixed; border-width: 1px 0px 0px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 15px; left: 0px; border-color: rgb(184, 195, 127); width: 100vw;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-padding-right"
-            style="position: fixed; border-width: 0px 1px 0px 0px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 0px; left: 286.216px; border-color: rgb(184, 195, 127); height: 100vh;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-padding-bottom"
-            style="position: fixed; border-width: 0px 0px 1px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 56px; left: 0px; border-color: rgb(184, 195, 127); width: 100vw;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-padding-left"
-            style="position: fixed; border-width: 0px 0px 0px 1px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 0px; left: 132.455px; border-color: rgb(184, 195, 127); height: 100vh;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-border-top"
-            style="position: fixed; border-width: 1px 0px 0px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 15px; left: 0px; border-color: rgb(227, 194, 130); width: 100vw;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-border-right"
-            style="position: fixed; border-width: 0px 1px 0px 0px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 0px; left: 286.216px; border-color: rgb(227, 194, 130); height: 100vh;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-border-bottom"
-            style="position: fixed; border-width: 0px 0px 1px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 56px; left: 0px; border-color: rgb(227, 194, 130); width: 100vw;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-border-left"
-            style="position: fixed; border-width: 0px 0px 0px 1px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 0px; left: 132.455px; border-color: rgb(227, 194, 130); height: 100vh;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-margin-top"
-            style="position: fixed; border-width: 1px 0px 0px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 15px; left: 0px; border-color: rgb(172, 128, 83); width: 100vw;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-margin-right"
-            style="position: fixed; border-width: 0px 1px 0px 0px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 0px; left: 302.216px; border-color: rgb(172, 128, 83); height: 100vh;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-margin-bottom"
-            style="position: fixed; border-width: 0px 0px 1px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 56px; left: 0px; border-color: rgb(172, 128, 83); width: 100vw;">
-        </div>
-        <div data-inspect-element="inspectElement" id="inspect-element-grid-line-margin-left"
-            style="position: fixed; border-width: 0px 0px 0px 1px; border-style: dashed; z-index: 2147483647; pointer-events: none; top: 0px; left: 132.455px; border-color: rgb(172, 128, 83); height: 100vh;">
-        </div>
-        <div
-            style="position: fixed; display: flex; flex-direction: column; align-items: flex-end; font-family: monospace; transition: transform 0.4s; z-index: 2147483647; pointer-events: none; top: unset; right: 0px; bottom: 0px; left: unset;">
-            <div data-inspect-element="inspectElement" id="inspect-element-element-info-wrapper"
-                style="grid-area: wrapper; z-index: 2147483647; display: grid; height: unset; align-items: center; justify-content: center; padding-left: 0px; padding-right: 0px; pointer-events: none; color: rgb(34, 34, 34); position: relative; font-size: 12px; text-align: center; grid-template-areas: &quot;position position-padding2 position-padding3 position-padding4 position-padding5 position-top position-padding6 position-padding7 position-padding8 position-padding9&quot; &quot;position-padding10 size-padding1 size-padding2 width width width width width column-gap position-padding11&quot; &quot;position-padding12 size-padding4 margin-padding1 margin-padding2 margin-padding3 margin-top margin-padding4 margin-padding5 margin-padding6 position-padding13&quot; &quot;position-padding14 height margin-padding7 border-top-left-radius border-padding2 border-top-width border-padding3 border-top-right-radius margin-padding8 position-padding15&quot; &quot;position-padding16 height margin-padding9 border-padding5 padding-padding1 padding-top padding-padding2 border-padding6 margin-padding10 position-padding17&quot; &quot;position-left height margin-left border-left-width padding-left content-width padding-right border-right-width margin-right position-right&quot; &quot;position-left height margin-left border-left-width padding-left content-padding1 padding-right border-right-width margin-right position-right&quot; &quot;position-left height margin-left border-left-width padding-left content-height padding-right border-right-width margin-right position-right&quot; &quot;position-padding18 height margin-padding11 border-padding7 padding-padding3 padding-bottom padding-padding4 border-padding8 margin-padding12 position-padding19&quot; &quot;position-padding20 height margin-padding13 border-bottom-left-radius border-padding10 border-bottom-width border-padding11 border-bottom-right-radius margin-padding14 position-padding21&quot; &quot;position-padding22 row-gap margin-padding15 margin-padding16 margin-padding17 margin-bottom margin-padding18 margin-padding19 margin-padding20 position-padding23&quot; &quot;position-padding24 position-padding25 position-padding26 position-padding27 position-padding28 position-bottom position-padding29 position-padding30 position-padding31 position-padding32&quot;;">
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-content-height"
-                    style="grid-area: content-height; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(136, 178, 190);">
-                    h &nbsp;&nbsp;&nbsp;&nbsp;30&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-content-width"
-                    style="grid-area: content-width; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(136, 178, 190);">
-                    w &nbsp;&nbsp;&nbsp;152.761</div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-height"
-                    style="grid-area: height; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(241, 139, 130);">
-                    <p style="margin: 0;">40</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-width"
-                    style="grid-area: width; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(241, 139, 130);">
-                    <p style="margin: 0;">152.761</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-padding-top"
-                    style="grid-area: padding-top; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(184, 195, 127);">
-                    <p style="margin: 0;">5</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-padding-right"
-                    style="grid-area: padding-right; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(184, 195, 127);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-padding-bottom"
-                    style="grid-area: padding-bottom; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(184, 195, 127);">
-                    <p style="margin: 0;">5</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-padding-left"
-                    style="grid-area: padding-left; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(184, 195, 127);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-top-width"
-                    style="grid-area: border-top-width; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-right-width"
-                    style="grid-area: border-right-width; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-bottom-width"
-                    style="grid-area: border-bottom-width; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-left-width"
-                    style="grid-area: border-left-width; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-top-left-radius"
-                    style="grid-area: border-top-left-radius; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-top-right-radius"
-                    style="grid-area: border-top-right-radius; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-bottom-left-radius"
-                    style="grid-area: border-bottom-left-radius; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-bottom-right-radius"
-                    style="grid-area: border-bottom-right-radius; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-top"
-                    style="grid-area: margin-top; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-right"
-                    style="grid-area: margin-right; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                    <p style="margin: 0;">16</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-bottom"
-                    style="grid-area: margin-bottom; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-left"
-                    style="grid-area: margin-left; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position"
-                    style="grid-area: position; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-top"
-                    style="grid-area: position-top; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-right"
-                    style="grid-area: position-right; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-bottom"
-                    style="grid-area: position-bottom; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-left"
-                    style="grid-area: position-left; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-row-gap"
-                    style="grid-area: row-gap; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(250, 151, 219);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-column-gap"
-                    style="grid-area: column-gap; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(250, 151, 219);">
-                    <p style="margin: 0;">&nbsp;</p>
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-size-padding1"
-                    style="grid-area: size-padding1; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(241, 139, 130); filter: brightness(0.9);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-size-padding2"
-                    style="grid-area: size-padding2; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(241, 139, 130); filter: brightness(0.9);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-size-padding4"
-                    style="grid-area: size-padding4; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(241, 139, 130); filter: brightness(0.9);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-content-padding1"
-                    style="grid-area: content-padding1; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-padding-padding1"
-                    style="grid-area: padding-padding1; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(184, 195, 127);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-padding-padding2"
-                    style="grid-area: padding-padding2; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(184, 195, 127);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-padding-padding3"
-                    style="grid-area: padding-padding3; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(184, 195, 127);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-padding-padding4"
-                    style="grid-area: padding-padding4; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(184, 195, 127);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-padding2"
-                    style="grid-area: border-padding2; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-padding3"
-                    style="grid-area: border-padding3; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-padding5"
-                    style="grid-area: border-padding5; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-padding6"
-                    style="grid-area: border-padding6; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-padding7"
-                    style="grid-area: border-padding7; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-padding8"
-                    style="grid-area: border-padding8; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-padding10"
-                    style="grid-area: border-padding10; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-border-padding11"
-                    style="grid-area: border-padding11; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(227, 194, 130);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding1"
-                    style="grid-area: margin-padding1; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding2"
-                    style="grid-area: margin-padding2; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding3"
-                    style="grid-area: margin-padding3; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding4"
-                    style="grid-area: margin-padding4; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding5"
-                    style="grid-area: margin-padding5; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding6"
-                    style="grid-area: margin-padding6; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding7"
-                    style="grid-area: margin-padding7; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding8"
-                    style="grid-area: margin-padding8; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding9"
-                    style="grid-area: margin-padding9; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding10"
-                    style="grid-area: margin-padding10; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding11"
-                    style="grid-area: margin-padding11; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding12"
-                    style="grid-area: margin-padding12; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding13"
-                    style="grid-area: margin-padding13; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding14"
-                    style="grid-area: margin-padding14; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding15"
-                    style="grid-area: margin-padding15; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding16"
-                    style="grid-area: margin-padding16; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding17"
-                    style="grid-area: margin-padding17; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding18"
-                    style="grid-area: margin-padding18; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding19"
-                    style="grid-area: margin-padding19; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-margin-padding20"
-                    style="grid-area: margin-padding20; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(172, 128, 83);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding2"
-                    style="grid-area: position-padding2; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding3"
-                    style="grid-area: position-padding3; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding4"
-                    style="grid-area: position-padding4; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding5"
-                    style="grid-area: position-padding5; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding6"
-                    style="grid-area: position-padding6; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding7"
-                    style="grid-area: position-padding7; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding8"
-                    style="grid-area: position-padding8; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding9"
-                    style="grid-area: position-padding9; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding10"
-                    style="grid-area: position-padding10; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding11"
-                    style="grid-area: position-padding11; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding12"
-                    style="grid-area: position-padding12; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding13"
-                    style="grid-area: position-padding13; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding14"
-                    style="grid-area: position-padding14; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding15"
-                    style="grid-area: position-padding15; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding16"
-                    style="grid-area: position-padding16; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding17"
-                    style="grid-area: position-padding17; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding18"
-                    style="grid-area: position-padding18; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding19"
-                    style="grid-area: position-padding19; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding20"
-                    style="grid-area: position-padding20; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding21"
-                    style="grid-area: position-padding21; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding22"
-                    style="grid-area: position-padding22; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding23"
-                    style="grid-area: position-padding23; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding24"
-                    style="grid-area: position-padding24; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding25"
-                    style="grid-area: position-padding25; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding26"
-                    style="grid-area: position-padding26; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding27"
-                    style="grid-area: position-padding27; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding28"
-                    style="grid-area: position-padding28; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding29"
-                    style="grid-area: position-padding29; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding30"
-                    style="grid-area: position-padding30; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding31"
-                    style="grid-area: position-padding31; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-                <div data-inspect-element="inspectElement" id="inspect-element-element-info-position-padding32"
-                    style="grid-area: position-padding32; z-index: 2147483647; display: flex; height: 100%; align-items: center; justify-content: center; padding-left: 4px; padding-right: 4px; pointer-events: none; color: rgb(34, 34, 34); background-color: rgb(130, 130, 134);">
-                </div>
-            </div>
-        </div>
-    </div><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
