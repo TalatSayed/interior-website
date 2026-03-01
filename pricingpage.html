@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Luxury Living Interiors - Pricing</title>
 
@@ -22,6 +23,7 @@
       background: #f5f2ef;
       font-family: "Inter", sans-serif;
       color: #3d3a37;
+
     }
 
     h2 {
@@ -42,7 +44,7 @@
     .pricing-container {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
       gap: 2rem;
       padding: 40px;
       flex-wrap: wrap;
@@ -126,11 +128,39 @@
         flex-direction: column;
       }
     }
+
+    @media (max-width: 768px) {
+
+      .pricing-container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .pricing-plan {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+    }
+
+    .plan-button {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-plan {
+        padding: 30px 20px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  
+
   <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="#">Luxury Living Interiors</a>
@@ -159,39 +189,39 @@
   <div class="pricing-container">
 
     <div class="pricing-plan">
-      <div class="plan-title">Basic</div>
-      <div class="plan-price">$9.99 <span>/month</span></div>
+      <div class="plan-title">3 BHK Interior </div>
+      <div class="plan-price">₹12 <span>Lakhs Onwards</span></div>
 
       <ul class="plan-features">
-        <li>✔ 10GB Storage</li>
-        <li>✔ 1 User</li>
-        <li>✖ Support</li>
+        <li>✔ 2 Toilets</li>
+        <li>✔ 1 Modular Kitchen</li>
+        <li>✔ 2 Bedrooms</li>
       </ul>
 
       <button class="plan-button">Sign Up</button>
     </div>
 
     <div class="pricing-plan">
-      <div class="plan-title">Standard</div>
-      <div class="plan-price">$19.99 <span>/month</span></div>
+      <div class="plan-title">Modular Kitchen </div>
+      <div class="plan-price">₹3 <span>Lakhs Onwards</span></div>
 
       <ul class="plan-features">
-        <li>✔ 50GB Storage</li>
-        <li>✔ 5 Users</li>
-        <li>✔ Phone & Email Support</li>
+        <li>✔ Paints </li>
+        <li>✔ Lights </li>
+        <li>✔ Table top </li>
       </ul>
 
       <button class="plan-button">Sign Up</button>
     </div>
 
     <div class="pricing-plan">
-      <div class="plan-title">Premium</div>
-      <div class="plan-price">$49.99 <span>/month</span></div>
+      <div class="plan-title">Toilets</div>
+      <div class="plan-price">₹2 <span>Lakhs Onwards</span></div>
 
       <ul class="plan-features">
-        <li>✔ 100GB Storage</li>
-        <li>✔ 10 Users</li>
-        <li>✔ 24/7 Support</li>
+        <li>✔ Premium Fittings </li>
+        <li>✔ Quality Tiles</li>
+        <li>✔ CP fittings Included</li>
       </ul>
 
       <button class="plan-button">Sign Up</button>
